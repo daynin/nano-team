@@ -1,6 +1,6 @@
 <div align="center">
 
-# nano-team
+# NANO TEAM
 
 **A tiny `pi.dev` extension that runs your subagents and shows them as a compact chip row above the editor.**
 
@@ -61,10 +61,12 @@ Run `/reload` after editing. A few starter agents live in `examples/team/` if yo
 ## Install
 
 ```
-npm install
+pi install git:github.com/daynin/nano-team
 ```
 
-Then point pi at this directory — it picks up the extension from the `pi.extensions` field in `package.json`. There's an `npm run typecheck` script if you want it.
+That writes to your global pi settings (`~/.pi/agent/settings.json`). Pass `-l` to install only for the current project. Other install sources work too — local path, npm, https URL — see the [pi packages docs](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/packages.md) for the full list.
+
+Verify with `pi list`. Remove with `pi remove nano-team`.
 
 ## The faces
 
@@ -77,4 +79,4 @@ Each agent gets its own color, picked from a 12-color palette so they don't blur
 
 ## License
 
-ISC.
+MIT — see [LICENSE](LICENSE).

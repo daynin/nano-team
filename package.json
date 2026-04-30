@@ -3,7 +3,16 @@
   "version": "1.0.0",
   "description": "A tiny pi.dev extension. It doesn't really do much — just runs your subagents and shows them as a compact little chip row above the editor so you can see who's working.",
   "type": "module",
-  "license": "ISC",
+  "license": "MIT",
+  "author": "Sergey Golovin",
+  "homepage": "https://github.com/daynin/nano-team",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daynin/nano-team.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daynin/nano-team/issues"
+  },
   "keywords": ["pi-package"],
   "pi": {
     "extensions": ["./index.ts"]
@@ -12,10 +21,10 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@mariozechner/pi-coding-agent": "*"
+    "@mariozechner/pi-coding-agent": "*",
+    "typebox": "*"
   },
   "dependencies": {
-    "typebox": "^1.1.24",
     "yaml": "^2.6.0"
   },
   "devDependencies": {
