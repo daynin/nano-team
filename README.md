@@ -60,11 +60,19 @@ Run `/reload` after editing. A few starter agents live in `examples/team/` if yo
 
 ## Install
 
+From npm:
+
+```
+pi install npm:nano-team
+```
+
+Or from GitHub:
+
 ```
 pi install git:github.com/daynin/nano-team
 ```
 
-That writes to your global pi settings (`~/.pi/agent/settings.json`). Pass `-l` to install only for the current project. Other install sources work too — local path, npm, https URL — see the [pi packages docs](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/packages.md) for the full list.
+That writes to your global pi settings (`~/.pi/agent/settings.json`). Pass `-l` to install only for the current project. Other install sources work too — local path, https URL — see the [pi packages docs](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/packages.md) for the full list.
 
 Verify with `pi list`. Remove with `pi remove nano-team`.
 

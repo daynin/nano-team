@@ -1,6 +1,6 @@
 {
   "name": "nano-team",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tiny pi.dev extension. It doesn't really do much — just runs your subagents and shows them as a compact little chip row above the editor so you can see who's working.",
   "type": "module",
   "license": "MIT",
@@ -15,7 +15,8 @@
   },
   "keywords": ["pi-package"],
   "pi": {
-    "extensions": ["./index.ts"]
+    "extensions": ["./index.ts"],
+    "image": "https://github.com/daynin/nano-team/blob/main/imgs/example.png?raw=true"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
